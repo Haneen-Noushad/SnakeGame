@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Booter;
+    src: url("Fonts/Booter\ -\ Zero\ Zero.woff") format("woff"),url("Fonts/Booter\ -\ Zero\ Zero.woff2") format("woff2");
+}
 *
 {
     box-sizing: border-box;
@@ -12,15 +16,27 @@ body
     margin: 0;
     background: black;
 }
+h1
+{
+    position: absolute;
+    color: rgba(119, 0, 255, 0.1);
+    font-family: Booter;
+    font-weight: none;
+    font-size: 35vmin;
+    z-index: 5;
+    margin-top:8vmin;
+ }
 #game-board
 {
     background: #111;
-    width: 100vmin;
-    height: 100vmin;
+    width: 95vmin;
+    height: 95vmin;
+    border: .35vmin solid black;   
     display: grid;
     grid-template-rows: repeat(21,1fr);
     grid-template-columns: repeat(21,1fr);
-    border: .25vmin solid #eee;
+    
+    box-shadow: 0 0 100px 1vmin #111;
 }
 .snake
 {
@@ -34,7 +50,20 @@ body
     background-color: rgb(139, 8, 8);
     border: .35vmin solid black;
     z-index: 10;    
-    border-radius: 100%;
-    width:80%;
-    height: 80%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: start;
+    
+    
+}
+p{
+    position: absolute;
+    bottom:-2%;
+    text-align: center;
+    color: rgba(255, 174, 0, 0.4);
+    font-size: 6vmin;
+    z-index:10;
+    font-family: Booter;
+    font-weight: none;
+
 }

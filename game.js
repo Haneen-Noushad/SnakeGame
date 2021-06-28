@@ -2,18 +2,27 @@ import { update as updateSnake, draw as drawSnake, snake_speed, getSnakeHead ,sn
 import { update as updateFood, draw as drawFood} from './food.js'
 import {outsideGrid} from './grid.js'
 
+
 let lastRenderTime = 0
 const gameBoard = document.getElementById("game-board")
 let gameOver = false
+let sc = 0
+
+export function updatescore(num)
+{
+    document.getElementById("score").innerHTML = Math.floor(num);
+    sc=num;
+}
 
 function main(currentTime)
 {
     if(gameOver)
     {
-        if(confirm('YOU LOST, PRESS OK TO RESTART'))
+        if(confirm("YOU LOST, PRESS OK TO RESTART \nSCORE : "+ Math.floor(sc)))
         {
             location.reload()
         }
+        return
     }
     
     window.requestAnimationFrame(main)
