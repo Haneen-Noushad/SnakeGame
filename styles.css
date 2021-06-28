@@ -25,13 +25,16 @@ body
 .snake
 {
     background-color: rgb(15, 122, 15);
-    border: .25vmin solid black;    
+    border: .35vmin solid black;    
     border-radius: 35%;
     z-index: 10;
 }
 .food
 {
     background-color: rgb(139, 8, 8);
-    border: .25vmin solid black;
+    border: .35vmin solid black;
     z-index: 10;    
+    border-radius: 100%;
+    width:80%;
+    height: 80%;
 }

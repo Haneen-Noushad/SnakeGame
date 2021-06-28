@@ -12,7 +12,7 @@ function main(currentTime)
     {
         if(confirm('YOU LOST, PRESS OK TO RESTART'))
         {
-            window.location = '/'
+            location.reload()
         }
     }
     
