@@ -19,7 +19,7 @@ body
 h1
 {
     position: absolute;
-    color: rgba(119, 0, 255, 0.1);
+    color: rgba(255, 255, 255, 0.055);
     font-family: Booter;
     font-weight: none;
     font-size: 35vmin;
