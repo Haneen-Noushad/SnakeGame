@@ -35,7 +35,8 @@ h1
     display: grid;
     grid-template-rows: repeat(21,1fr);
     grid-template-columns: repeat(21,1fr);
-    
+    justify-items: center;
+    align-items: center;
     box-shadow: 0 0 100px 1vmin #111;
 }
 .snake
@@ -43,6 +44,8 @@ h1
     background-color: rgb(15, 122, 15);
     border: .35vmin solid black;    
     border-radius: 35%;
+    width: 100%;
+    height: 100%;
     z-index: 10;
 }
 .food
@@ -51,6 +54,8 @@ h1
     border: .35vmin solid black;
     z-index: 10;    
     border-radius: 50%;
+    width: 85%;
+    height: 85%;
     display: flex;
     justify-content: start;
     

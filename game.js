@@ -7,10 +7,13 @@ let lastRenderTime = 0
 const gameBoard = document.getElementById("game-board")
 let gameOver = false
 let sc = 0
+let element = getSnakeHead();
+
+
 
 export function updatescore(num)
 {
-    document.getElementById("score").innerHTML = Math.floor(num);
+    document.getElementById("score").innerText = Math.floor(num);
     sc=num;
 }
 
@@ -49,6 +52,7 @@ function draw()
     gameBoard.innerHTML = '';
     drawSnake(gameBoard)
     drawFood(gameBoard)
+    
 }
 
 function checkDeath()
